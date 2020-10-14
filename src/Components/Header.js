@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import Logo from './img/logo.png';
 import LogoText from './img/logo-text.png';
+import LogoUser from './img/user.png';
 
 export default () => {
     return (
@@ -16,7 +17,7 @@ export default () => {
             </div>
             <div className="login">
                 <a href="#">
-                    <button className="login--button">Entrar</button>
+                    <img src="" />
                 </a>
             </div>
         </header>
