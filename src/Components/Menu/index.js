@@ -1,8 +1,7 @@
 import React from 'react';
-import './Menu.css'; 
+import './Menu.css';
 
-
-export default () => {
+const Menu = () => {
     return (
         <nav class="menu">
 	        <ul>
@@ -42,5 +41,7 @@ export default () => {
                 <li><a href="#">Sobre Nós</a></li>
             </ul>
         </nav>
-    )
+    );
 }
+
+export default Menu;

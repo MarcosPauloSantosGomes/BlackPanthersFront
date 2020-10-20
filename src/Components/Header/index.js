@@ -1,10 +1,13 @@
 import React from 'react';
-import './Header.css';
-import Logo from './img/logo.png';
-import LogoText from './img/logo-text.png';
-import LogoUser from './img/user.png';
+import { Link } from 'react-router-dom';
 
-export default () => {
+import './Header.css';
+import Logo from '../img/logo.png';
+import LogoText from '../img/logo-text.png';
+
+import * as ROUTES from '../../constants/routes'
+
+const Header = () => {
     return (
         <header>
             <div className="logo--image">
@@ -16,10 +19,12 @@ export default () => {
                 <img src={LogoText} />
             </div>
             <div className="login">
-                <a href="#">
-                    <img src="" />
-                </a>
+                <Link to={ROUTES.LOGIN}>
+                    <button className="login--button">Entrar</button>
+                </Link>
             </div>
         </header>
     );
 }
+
+export default Header;
