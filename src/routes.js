@@ -5,7 +5,6 @@ import Landing from './pages/Landing'
 import Login from './pages/Login';
 
 import * as ROUTES from './constants/routes'
-import Menu from './Components/Menu';
 
 import Bones from './pages/Acessorios/Bones';
 import Correntes from './pages/Acessorios/Correntes';

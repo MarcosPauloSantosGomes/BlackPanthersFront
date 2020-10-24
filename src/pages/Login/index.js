@@ -1,117 +1,111 @@
-import React, {addEventListener} from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { useState } from 'react'
 
 import './Login.css'
 
-
 const Login = () => {
-    {/*var btnSignin = document.querySelector("#signin")
-    var btnSignup = document.querySelector("#signup")
-    var body = document.querySelector("body")
+    const [signIn, setSignIn] = useState(false)
 
+    function handleClick() {
+        setSignIn((anterior) => !anterior)
+    }
 
-    btnSignin.addEventListener("click", function () {
-        body.className="sign-in-js"
-    })
-
-    btnSignup.addEventListener("click", function () {
-        body.className = "sign-up-js";
-    })*/}
     return (
-        <body>
-        <div class="container">
-            <div class="content first-content">
-                <div class="first-column">
-                    <h2 class="title title-primary">Bem-Vindo!</h2>
-                    <p class="description description-primary">Para acessar sua conta</p>
-                    <p class="description description-primary">por favor insira seus dados!</p>
-                    <button id="signin" class="btn btn-primary">Entrar</button>
+        <body className={signIn ? 'sign-in-js' : 'sign-up-js'}>
+        <div className="container">
+            <div className="content first-content">
+                <div className="first-column">
+                    <h2 className="title title-primary">Bem-Vindo!</h2>
+                    <p className="description description-primary">Para acessar sua conta</p>
+                    <p className="description description-primary">por favor insira seus dados!</p>
+                    <button onClick={handleClick} id="signin" className="btn btn-primary">Entrar</button>
                 </div>    
-                <div class="second-column">
-                    <h2 class="title title-second">Criar Conta</h2>
-                    <div class="social-media">
-                        <ul class="list-social-media">
-                            <a class="link-social-media" href="#">
-                                <li class="item-social-media">
-                                    <i class="fab fa-facebook-f"></i>        
+                <div className="second-column">
+                    <h2 className="title title-second">Criar Conta</h2>
+                    <div className="social-media">
+                        <ul className="list-social-media">
+                            <a className="link-social-media" href="#">
+                                <li className="item-social-media">
+                                    <FontAwesomeIcon icon={["fab", "fa-facebook-f"]} />        
                                 </li>
                             </a>
-                            <a class="link-social-media" href="#">
-                                <li class="item-social-media">
-                                    <i class="fab fa-google-plus-g"></i>
+                            <a className="link-social-media" href="#">
+                                <li className="item-social-media">
+                                    <i className="fab fa-google-plus-g"></i>
                                 </li>
                             </a>
-                            <a class="link-social-media" href="#">
-                                <li class="item-social-media">
-                                    <i class="fab fa-linkedin-in"></i>
+                            <a className="link-social-media" href="#">
+                                <li className="item-social-media">
+                                    <i className="fab fa-linkedin-in"></i>
                                 </li>
                             </a>
                         </ul>
                     </div>
-                    <p class="description description-second">Ou use seu email para registro:</p>
-                    <form class="form">
-                        <label class="label-input" for="">
-                            <i class="far fa-user icon-modify"></i>
+                    <p className="description description-second">Ou use seu email para registro:</p>
+                    <form className="form">
+                        <label className="label-input" for="">
+                            <i className="far fa-user icon-modify"></i>
                             <input type="text" placeholder="Nome" />
                         </label>
                         
-                        <label class="label-input" for="">
-                            <i class="far fa-envelope icon-modify"></i>
+                        <label className="label-input" for="">
+                            <i className="far fa-envelope icon-modify"></i>
                             <input type="email" placeholder="Email" />
                         </label>
                         
-                        <label class="label-input" for="">
-                            <i class="fas fa-lock icon-modify"></i>
+                        <label className="label-input" for="">
+                            <i className="fas fa-lock icon-modify"></i>
                             <input type="password" placeholder="Senha" />
                         </label>
                         
                         
-                        <button class="btn btn-second">Cadastrar</button>        
+                        <button className="btn btn-second">Cadastrar</button>        
                     </form>
                 </div>
             </div>
-            <div class="content second-content">
-                <div class="first-column">
-                    <h2 class="title title-primary">Olá, Amigo!</h2>
-                    <p class="description description-primary">Enter your personal details</p>
-                    <p class="description description-primary">and start journey with us</p>
-                    <button id="signup" class="btn btn-primary">sign up</button>
+            <div className="content second-content">
+                <div className="first-column">
+                    <h2 className="title title-primary">Olá, Amigo!</h2>
+                    <p className="description description-primary">Entre com seus dados</p>
+                    <p className="description description-primary">e comece sua jornada!</p>
+                    <button onClick={handleClick} id="signup" className="btn btn-primary">Cadastrar</button>
                 </div>
-                <div class="second-column">
-                    <h2 class="title title-second">sign in to developer</h2>
-                    <div class="social-media">
-                        <ul class="list-social-media">
-                            <a class="link-social-media" href="#">
-                                <li class="item-social-media">
-                                    <i class="fab fa-facebook-f"></i>
+                <div className="second-column">
+                    <h2 className="title title-second">Login</h2>
+                    <div className="social-media">
+                        <ul className="list-social-media">
+                            <a className="link-social-media" href="#">
+                                <li className="item-social-media">
+                                    <i className="fab fa-facebook-f"></i>
                                 </li>
                             </a>
-                            <a class="link-social-media" href="#">
-                                <li class="item-social-media">
-                                    <i class="fab fa-google-plus-g"></i>
+                            <a className="link-social-media" href="#">
+                                <li className="item-social-media">
+                                    <i className="fab fa-google-plus-g"></i>
                                 </li>
                             </a>
-                            <a class="link-social-media" href="#">
-                                <li class="item-social-media">
-                                    <i class="fab fa-linkedin-in"></i>
+                            <a className="link-social-media" href="#">
+                                <li className="item-social-media">
+                                    <i className="fab fa-linkedin-in"></i>
                                 </li>
                             </a>
                         </ul>
                     </div>
-                    <p class="description description-second">Ou use sua conta:</p>
-                    <form class="form">
+                    <p className="description description-second">Ou use sua conta:</p>
+                    <form onSubmit={e => e.preventDefault()} className="form">
                     
-                        <label class="label-input" for="">
-                            <i class="far fa-envelope icon-modify"></i>
+                        <label className="label-input" for="">
+                            <i className="far fa-envelope icon-modify"></i>
                             <input type="email" placeholder="Email" />
                         </label>
                     
-                        <label class="label-input" for="">
-                            <i class="fas fa-lock icon-modify"></i>
-                            <input type="password" placeholder="Senhn" />
+                        <label className="label-input" for="">
+                            <i className="fas fa-lock icon-modify"></i>
+                            <input type="password" placeholder="Senha" />
                         </label>
                     
-                        <a class="password" href="#">Esqueceu sua Senha?</a>
-                        <button class="btn btn-second">Entrar</button>
+                        <a className="password" href="#">Esqueceu sua Senha?</a>
+                        <button className="btn btn-second">Entrar</button>
                     </form>
                 </div>
             </div>

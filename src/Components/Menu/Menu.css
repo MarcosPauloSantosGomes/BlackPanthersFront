@@ -16,7 +16,7 @@
 }
 
 .menu ul li {
-	width:227px;
+	width:226px;
 	float:left;
 	box-shadow: 1px 1px 1px 1px rgb(83, 83, 83);
 }
@@ -60,4 +60,24 @@
 
 #bt_menu{
 	display: none;
+}
+
+.sobrenos {
+	height: 0px;
+    margin-top: -12px;
+}
+
+.sobrenos:hover {
+	background: #fff;
+	color: #daa520;
+}
+
+.home {
+	height: 0px;
+    margin-top: -12px;
+}
+
+.home:hover {
+	background: #fff;
+	color: #daa520;
 }

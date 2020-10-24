@@ -8,7 +8,7 @@ const Menu = () => {
     return (
         <nav class="menu">
 	        <ul>
-                <li><Link to={ROUTES.HOME}><a href="#">Home</a></Link></li>
+                <li><Link to={ROUTES.HOME}><a href="#" className="home">Home</a></Link></li>
 
                 <li><a href="#">Masculino</a>
                     <ul>
@@ -43,7 +43,7 @@ const Menu = () => {
                     </ul>
                 </li>
 
-                <li><Link to={ROUTES.SB}><a href="#"> Sobre Nós </a></Link></li>
+                <li><Link to={ROUTES.SB}><a href="#" className="sobrenos"> Sobre Nós </a></Link></li>
 
             </ul>
         </nav>

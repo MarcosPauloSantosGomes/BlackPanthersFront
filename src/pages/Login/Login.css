@@ -75,6 +75,7 @@ body {
     background-color: transparent;
     border: 1px solid #fff;
     transition: all ease 0.3s;
+    padding: 10px 43px;
 }
 .btn-primary:hover {
     background-color: #daa520;
@@ -84,7 +85,7 @@ body {
     background-color: #000;
     border: 1px solid transparent;
     transition: all ease 0.3s;
-    padding: 10px 42px;
+    padding: 10px 45px;
 }
 .btn-second:hover {
     background-color: #daa520;
@@ -178,6 +179,10 @@ input:-webkit-autofill
     order: 1;
     z-index: -1;
 }
+.active {
+    order: 1;
+    z-index: 1000;
+}
 .password {
     color: #34495e;
     font-size: 14px;
@@ -208,13 +213,11 @@ input:-webkit-autofill
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     animation: slidein 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
-
     z-index: 12;
 }
 
 .sign-up-js .content::before {
     animation: slideout 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
-
     z-index: 12;
 }
 
@@ -311,17 +314,17 @@ input:-webkit-autofill
     }
 
     25% {
-        left: 5%;
+        left: 25%;
         width: 50%;
     }
 
     50% {
-        left: 25%;
+        left: 53%;
         width: 60%;
     }
 
     75% {
-        left: 45%;
+        left: 56%;
         width: 50%;
     }
 
@@ -339,17 +342,17 @@ input:-webkit-autofill
     }
 
     25% {
-        left: 45%;
+        left: 27%;
         width: 50%;
     }
 
     50% {
-        left: 25%;
+        left: 12%;
         width: 60%;
     }
 
     75% {
-        left: 5%;
+        left: 6%;
         width: 50%;
     }
 
